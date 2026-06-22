@@ -1,3 +1,4 @@
+import compression from "compression";
 import cors from "cors";
 import express from "express";
 import { config } from "./config";
@@ -5,6 +6,7 @@ import logRoutes from "./routes/logRoutes";
 
 const app = express();
 
+app.use(compression());
 app.use(cors());
 app.use(express.json());
 

@@ -20,23 +20,20 @@ async function getLogFilePaths(): Promise<string[]> {
     .sort();
 }
 
-export async function getLogContent(filename?: string): Promise<string> {
-  let filePath: string;
-
+export async function resolveLogFilePath(filename?: string): Promise<string> {
   if (filename) {
-    filePath = resolveLogPath(filename);
+    const filePath = resolveLogPath(filename);
     try {
       await fs.access(filePath);
     } catch {
       throw new Error(`Log file not found: ${filename}`);
     }
-  } else {
-    const filePaths = await getLogFilePaths();
-    if (filePaths.length === 0) {
-      throw new Error("No .log files found in data folder");
-    }
-    filePath = filePaths[0];
+    return filePath;
   }
 
-  return fs.readFile(filePath, "utf-8");
+  const filePaths = await getLogFilePaths();
+  if (filePaths.length === 0) {
+    throw new Error("No .log files found in data folder");
+  }
+  return filePaths[0];
 }
