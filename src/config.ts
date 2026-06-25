@@ -9,4 +9,11 @@ export const config = {
   maxResponseSize: Number(process.env.MAX_RESPONSE_SIZE) || 194800,
   // Raw bytes read per chunk; kept below maxResponseSize to fit JSON wrapper
   maxChunkSize: Number(process.env.MAX_CHUNK_SIZE) || 194800,
+  jobCardsFile: path.resolve(
+    process.env.JOB_CARDS_FILE || path.join(process.env.DATA_FOLDER || "./data", "jobcards.json")
+  ),
+  appDynamicsFile: path.resolve(
+    process.env.APPDYNAMICS_FILE ||
+      path.join(process.env.DATA_FOLDER || "./data", "appdynamics-events.json")
+  ),
 };

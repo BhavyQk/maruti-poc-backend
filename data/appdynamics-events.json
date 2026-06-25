@@ -1,0 +1,128 @@
+[
+  {
+    "title": "[API Error] Book service API response error",
+    "body": "Book service response error: No available service advisors found at the specified time",
+    "severity": "medium",
+    "source": "Application Monitoring",
+    "reported_by": "System",
+    "custom_fields": {
+      "user_id": "192887779",
+      "mobile": "9028242267",
+      "screen": "ReviewSummaryOneClick",
+      "session_id": "2267_1781861238739",
+      "status_code": "",
+      "error_code": "UNKNOWN_ERROR",
+      "error_message": "Book service response error: No available service advisors found at the specified time",
+      "api_endpoint": "",
+      "car_registration": "",
+      "car_vin": "",
+      "customer_name": "",
+      "event_timestamp": "06/19/26 2:57:19 PM",
+      "additional_details": {
+        "errorCode": "UNKNOWN_BOOK_SERVICE_ERROR",
+        "errorMessage": "No available service advisors found at the specified time",
+        "dealerMapCode": "10036",
+        "locCode": "SRD",
+        "dealerType": "2S",
+        "parentGrp": "KANKA",
+        "appointmentTypeCode": "PMS",
+        "slotTimeCode": "",
+        "srvTypeCode": "PMS",
+        "currentSaCode": "SHAY9811",
+        "appointmentDate": "20-Jun-2026",
+        "slotCode": "0900-1100"
+      }
+    }
+  },
+  {
+    "title": "[API Error] Book service API response error",
+    "body": "Book service response error: No available service advisors found at the specified time",
+    "severity": "medium",
+    "source": "Application Monitoring",
+    "reported_by": "System",
+    "custom_fields": {
+      "user_id": "192887779",
+      "mobile": "9028242267",
+      "screen": "ReviewSummaryOneClick",
+      "session_id": "2267_1781861209184",
+      "status_code": "",
+      "error_code": "UNKNOWN_ERROR",
+      "error_message": "Book service response error: No available service advisors found at the specified time",
+      "api_endpoint": "",
+      "car_registration": "",
+      "car_vin": "",
+      "customer_name": "",
+      "event_timestamp": "06/19/26 2:56:50 PM",
+      "additional_details": {
+        "errorCode": "UNKNOWN_BOOK_SERVICE_ERROR",
+        "dealerMapCode": "10036",
+        "locCode": "SRD"
+      }
+    }
+  },
+  {
+    "title": "[API Error] Book service API response error",
+    "body": "Book service response error: Selected slot is no longer available",
+    "severity": "high",
+    "source": "Application Monitoring",
+    "reported_by": "System",
+    "custom_fields": {
+      "user_id": "192887780",
+      "mobile": "9876543210",
+      "screen": "ReviewSummaryOneClick",
+      "session_id": "3210_1781862001122",
+      "status_code": "409",
+      "error_code": "SLOT_UNAVAILABLE",
+      "error_message": "Book service response error: Selected slot is no longer available",
+      "api_endpoint": "/dmsExt/v2/api/common/msil/dms/book-service",
+      "car_registration": "DL3CAB1234",
+      "car_vin": "MA3ERLF1S00123456",
+      "customer_name": "Rohit Sharma",
+      "event_timestamp": "06/20/26 10:12:45 AM",
+      "additional_details": {
+        "errorCode": "SLOT_UNAVAILABLE",
+        "errorMessage": "Selected slot is no longer available",
+        "dealerMapCode": "10042",
+        "locCode": "SRD",
+        "dealerType": "3S",
+        "parentGrp": "KANKA",
+        "appointmentTypeCode": "PMS",
+        "srvTypeCode": "PMS",
+        "appointmentDate": "21-Jun-2026",
+        "slotCode": "1100-1300"
+      }
+    }
+  },
+  {
+    "title": "[API Error] Book service API response error",
+    "body": "Book service response error: Dealer not serviceable for selected vehicle",
+    "severity": "low",
+    "source": "Application Monitoring",
+    "reported_by": "System",
+    "custom_fields": {
+      "user_id": "192887781",
+      "mobile": "9012345678",
+      "screen": "DealerSelection",
+      "session_id": "5678_1781862555341",
+      "status_code": "422",
+      "error_code": "DEALER_NOT_SERVICEABLE",
+      "error_message": "Book service response error: Dealer not serviceable for selected vehicle",
+      "api_endpoint": "/dmsExt/v2/api/common/msil/dms/book-service",
+      "car_registration": "MH12XY9876",
+      "car_vin": "MA3ERLF1S00987654",
+      "customer_name": "Priya Nair",
+      "event_timestamp": "06/21/26 4:33:10 PM",
+      "additional_details": {
+        "errorCode": "DEALER_NOT_SERVICEABLE",
+        "errorMessage": "Dealer not serviceable for selected vehicle",
+        "dealerMapCode": "10099",
+        "locCode": "BLR",
+        "dealerType": "2S",
+        "appointmentTypeCode": "RR",
+        "srvTypeCode": "RR",
+        "appointmentDate": "22-Jun-2026",
+        "slotCode": "1500-1700"
+      }
+    }
+  }
+]

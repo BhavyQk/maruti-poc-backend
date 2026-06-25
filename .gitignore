@@ -3,3 +3,4 @@ dist/
 .env
 *.log.bak
 .DS_Store
+data/jobcards.json
