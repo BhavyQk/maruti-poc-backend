@@ -1,0 +1,84 @@
+const HTTP_CODES = {
+  // Informational
+  CONTINUE: 100,
+  SWITCHING_PROTOCOLS: 101,
+  PROCESSING: 102,
+
+  // Success
+
+  OK: 200,
+  CREATED: 201,
+
+  // Redirection
+  MOVED_PERMANENTLY: 301,
+  NOT_MODIFIED: 304,
+  TEMPORARY_REDIRECT: 307,
+
+  // Client Errors
+  BAD_REQUEST: 400,
+  UNAUTHORIZED: 401,
+  FORBIDDEN: 403,
+  NOT_FOUND: 404,
+  INACTIVE: 405,
+  CONFLICT: 409,
+  UNPROCESSABLE_ENTITY: 422,
+
+  // Server Errors
+  INTERNAL_SERVER_ERROR: 500,
+  NOT_IMPLEMENTED: 501,
+  BAD_GATEWAY: 502,
+  SERVICE_UNAVAILABLE: 503,
+  GATEWAY_TIMEOUT: 504,
+};
+
+const ROLE_IDS = {
+  USER: 1,
+  AGENT:2,
+};
+
+const ORM_ERRORS = {
+  ALREADY_EXISTS: "23505",
+  TYPE_CONSTRAINT_ERROR: "23514",
+};
+
+const DEVICE_TYPE = {
+  ANDROID: 1,
+  IOS: 2,
+  WEB: 3,
+};
+
+const STATUS = {
+  UNVERIFIED: 0,
+  ACTIVE: 1,
+  INACTIVE: 2,
+  DELETED: 3,
+};
+
+
+const DB_POOL = {
+  IDLE: 1000,
+};
+
+enum GENDER {
+  MALE = "male",
+  FEMALE = "female",
+  OTHER = "other",
+}
+
+enum MARITAL_STATUS {
+  SINGLE = "single",
+  MARRIED = "married",
+  DIVORCED = "divorced",
+  WIDOWED = "widowed",
+}
+
+export {
+  HTTP_CODES,
+  ROLE_IDS,
+  ORM_ERRORS,
+  DEVICE_TYPE,
+  STATUS,
+  DB_POOL,
+  GENDER,
+  MARITAL_STATUS
+};

@@ -2,11 +2,17 @@
   "name": "maruti-log-api",
   "version": "1.0.0",
   "description": "API to fetch and serve log file details from the data folder",
-  "main": "dist/index.js",
+  "main": "dist/src/index.js",
   "scripts": {
     "dev": "tsx watch src/index.ts",
     "build": "tsc",
-    "start": "node dist/index.js"
+    "start": "node dist/src/index.js",
+    "migrate": "sequelize-cli db:migrate",
+    "migrate:undo": "sequelize-cli db:migrate:undo",
+    "migrate:undo:all": "sequelize-cli db:migrate:undo:all",
+    "seed": "sequelize-cli db:seed:all",
+    "seed:undo": "sequelize-cli db:seed:undo:all",
+    "migration:generate": "sequelize-cli migration:generate --name"
   },
   "keywords": [
     "logs",
@@ -18,13 +24,20 @@
     "compression": "^1.8.1",
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
-    "express": "^4.21.2"
+    "express": "^4.21.2",
+    "pg": "^8.22.0",
+    "pg-hstore": "^2.3.4",
+    "reflect-metadata": "^0.2.2",
+    "sequelize": "^6.37.5",
+    "sequelize-typescript": "^2.1.6"
   },
   "devDependencies": {
     "@types/compression": "^1.8.1",
     "@types/cors": "^2.8.17",
     "@types/express": "^5.0.0",
     "@types/node": "^22.10.2",
+    "@types/pg": "^8.20.0",
+    "sequelize-cli": "^6.6.2",
     "tsx": "^4.19.2",
     "typescript": "^5.7.2"
   }
